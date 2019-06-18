@@ -32,6 +32,20 @@
     font-family: Montserrat-Regular;
 }
 
+.bodyTextBold {
+    color: black;
+    font-family: Montserrat-Regular;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.navbarHeading {
+    color: white;
+    font-family: Montserrat-Regular;
+    text-align: center;
+    font-size: xx-large;
+}
+
 .buttonFormatting {
     background-color: #114592;
     border: 2px solid #114592;
@@ -51,6 +65,7 @@
         background-color: white;
         color: #114592;
     }
+
 .topnav {
     overflow: hidden;
     background-color: #4D7EC6;
