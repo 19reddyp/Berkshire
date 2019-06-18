@@ -1,0 +1,32 @@
+﻿@font-face {
+	font-family: Montserrat-Bold;
+	src: url('../../../montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url('../../../montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+.majorHeading {
+    color: #114592;
+    font-family:Montserrat-Regular;
+    text-align:center;
+    
+}
+
+.minorHeading {
+    color: #A5B6BF;
+    font-family:Montserrat-Regular;
+}
+
+.tableLabel {
+    color: #4D7EC6;
+    font-family:Montserrat-Bold;
+}
+
+.bodyText {
+    color: black;
+    font-family: Montserrat-Regular;
+}
