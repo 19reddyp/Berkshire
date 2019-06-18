@@ -11,32 +11,34 @@
 
 .majorHeading {
     color: #114592;
-    font-family: Montserrat-Regular;
-    text-align: center;
+    font-family:Montserrat-Regular;
+    text-align:center;
     font-size: xx-large;
 }
 
 .minorHeading {
     color: #A5B6BF;
-    font-family: Montserrat-Regular;
+    font-family:Montserrat-Regular;
     font-size: x-large;
 }
 
 .tableLabel {
     color: #4D7EC6;
-    font-family: Montserrat-Bold;
+    font-family:Montserrat-Bold;
+    font-size: medium;
 }
 
 .bodyText {
     color: black;
     font-family: Montserrat-Regular;
+    font-size:medium;
 }
 
 .bodyTextBold {
     color: black;
     font-family: Montserrat-Regular;
     font-size: medium;
-    font-weight: bold;
+    font-weight:bold;
 }
 
 .navbarHeading {
@@ -71,6 +73,11 @@
     background-color: #4D7EC6;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: #4D7EC6;
+}
+
     .topnav a {
         float: left;
         color: #f2f2f2;
@@ -80,7 +87,7 @@
         font-size: 17px;
     }
 
-        .topnav a:hover .dropdown a:hover .dropbtn {
+        .topnav a:hover .dropdown a:hover .dropbtn{
             background-color: white;
             color: #4D7EC6;
         }
@@ -95,5 +102,5 @@
 }
 
 .topnav-center {
-    align-content: center;
+    align-content:center;
 }
