@@ -23,27 +23,36 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col" style="width: 15%">Title</th>
-                            <th scope="col" style="width: 15%">Cover Art</th>
-                            <th scope="col">Description</th>
+                            <th class="tableHead" scope="col" style="width: 15%">Title</th>
+                            <th class="tableHead" scope="col" style="width: 15%">Cover Art</th>
+                            <th class="tableHead" scope="col">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <span>Description</span>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input class="searchInput" id='searchBar' onkeyup='searchTable()' type='text' placeholder="Search..." />
+                                    </div>
+                                </div>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="clickable-row" data-href="http://www.suzannecollinsbooks.com/the_hunger_games_69765.htm">
+                        <tr class="clickable-row tableRow" data-href="http://www.suzannecollinsbooks.com/the_hunger_games_69765.htm">
                             <th scope="row">The Hunger Games</th>
                             <td><img src="Images/hungerGames.jpg" class="tableImages" /></td>
                             <td>
                                 Katniss is a 16-year-old girl living with her mother and younger sister in the poorest district of Panem, the remains of what used be North America. Long ago the districts waged war on the Capitol and were defeated. As part of the surrender terms, each district agreed to send one boy and one girl to appear in an annual televised event called, "The Hunger Games." The terrain, rules, and level of audience participation may change but one thing is constant: kill or be killed. When her sister is chosen by lottery, Katniss steps up to go in her place. (Scholastic Press, 2008)
                             </td>
                         </tr>
-                        <tr class="clickable-row" data-href="http://www.suzannecollinsbooks.com/catching_fire_88086.htm">
+                        <tr class="clickable-row tableRow" data-href="http://www.suzannecollinsbooks.com/catching_fire_88086.htm">
                             <th scope="row">Catching Fire</th>
                             <td><img class="tableImages" src="Images/catchingFire.jpg" /></td>
                             <td>
                                 Much to her shock, Katniss has fueled an unrest she's afraid she cannot stop. And what scares her more is that she's not entirely convinced she should try. As time draws near for Katniss and Peeta to visit the districts on the Capitol's cruel Victory Tour, the stakes are higher than ever. If they can't prove, without a shadow of a doubt, that they are lost in their love for each other, the consequences will be horrifying. (Scholastic Press, 2009)
                             </td>
                         </tr>
-                        <tr class="clickable-row" data-href="http://www.suzannecollinsbooks.com/mockingjay_102797.htm">
+                        <tr class="clickable-row tableRow" data-href="http://www.suzannecollinsbooks.com/mockingjay_102797.htm">
                             <th scope="row">Mockingjay</th>
                             <td><img class="tableImages" src="Images/mockingJay.jpg" /></td>
                             <td>
@@ -55,18 +64,47 @@
             </div>
         </div>
     </div>
-       
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script>
-            jQuery(document).ready(function ($) {
-                $(".clickable-row").click(function () {
-                    window.location = $(this).data("href");
-                });
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".clickable-row").click(function () {
+                window.location = $(this).data("href");
             });
-        </script>
+        });
+        function searchTable() {
+            var input, filter, found, table, tr, td, i, j;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            trArray = document.getElementsByTagName("tr");
+            for (i = 1; i < trArray.length; i++) {
+                td = trArray[i].getElementsByTagName("td");
+                for (j = 0; j < td.length; j++) {
+                    if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        found = true;
+                    }
+                }
+                if (found) {
+                    if (!($('#mySwitch').is(":checked")) && !($(trArray[i]).hasClass('deleted'))) {
+                        trArray[i].style.display = "";
+                        found = false;
+                    } else if ($('#mySwitch').is(":checked")) {
+                        trArray[i].style.display = "";
+                        found = false;
+                    }
+
+                } else {
+                    trArray[i].style.display = "none";
+                }
+
+            }
+
+        };
+    </script>
 </body>
 </html>
