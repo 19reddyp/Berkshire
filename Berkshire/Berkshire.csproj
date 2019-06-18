@@ -67,7 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="hungerGames.html" />
+=======
+    <Content Include="homePage.html" />
+    <Content Include="suzanneCollins.css" />
+>>>>>>> home
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

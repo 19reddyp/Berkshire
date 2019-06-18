@@ -13,22 +13,25 @@
     color: #114592;
     font-family:Montserrat-Regular;
     text-align:center;
-    
+    font-size: xx-large;
 }
 
 .minorHeading {
     color: #A5B6BF;
     font-family:Montserrat-Regular;
+    font-size: large;
 }
 
 .tableLabel {
     color: #4D7EC6;
     font-family:Montserrat-Bold;
+    font-size: medium;
 }
 
 .bodyText {
     color: black;
     font-family: Montserrat-Regular;
+    font-size:small;
 }
 
 .buttonFormatting {
@@ -50,4 +53,3 @@
         background-color: white;
         color: #114592;
     }
-
