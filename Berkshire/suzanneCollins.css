@@ -41,6 +41,13 @@
     font-weight:bold;
 }
 
+.navbarHeading {
+    color: white;
+    font-family: Montserrat-Regular;
+    text-align: center;
+    font-size: xx-large;
+}
+
 .buttonFormatting {
     background-color: #114592;
     border: 2px solid #114592;
