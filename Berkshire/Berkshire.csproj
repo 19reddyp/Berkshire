@@ -83,6 +83,7 @@
     <Content Include="Images\the-hunger-games-complete-trilogy.jpg" />
     <Content Include="suzanneCollins.css" />
     <Content Include="Web.config" />
+    <Content Include="works.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

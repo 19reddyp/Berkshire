@@ -1,37 +1,23 @@
-﻿@font-face {
-    font-family: Montserrat-Bold;
-    src: url('../../../montserrat/Montserrat-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Montserrat-Regular;
-    src: url('../../../montserrat/Montserrat-Regular.ttf') format('truetype');
-}
-
-
-.majorHeading {
+﻿.majorHeading {
     color: #114592;
-    font-family:Montserrat-Regular;
+    font-family:Calibri;
     text-align:center;
     font-size: xx-large;
 }
 
 .minorHeading {
     color: #A5B6BF;
-    font-family:Montserrat-Regular;
-    font-size: x-large;
+    font-family:Calibri;
 }
 
 .tableLabel {
     color: #4D7EC6;
-    font-family:Montserrat-Bold;
-    font-size: medium;
+    font-family:Calibri;
 }
 
 .bodyText {
     color: black;
-    font-family: Montserrat-Regular;
-    font-size:medium;
+    font-family: Calibri;
 }
 
 .bodyTextBold {
@@ -57,7 +43,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: medium;
-    font-family: Georgia;
+    font-family: Calibri;
     margin: 4px 2px;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -71,6 +57,29 @@
 .topnav {
     overflow: hidden;
     background-color: #4D7EC6;
+}
+.tableImages{
+    width: 95%;
+    height: auto;
+    text-align: center;
+}
+.searchInput {
+    float: right;
+    box-shadow: none;
+    height: 30px;
+    color: black;
+    text-indent: 10px;
+    font-size: 14px;
+    border-radius: 18px;
+    outline: none;
+    border-style: none;
+}
+.tableHead {
+    background-color: #A5B6BF;
+    color: #114592;
+}
+.tableRow:hover{
+    cursor: pointer;
 }
 
 .topnav {
