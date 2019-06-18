@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Central_park_ii-330-exp.jpg" />
+    <Content Include="Images\hunger-games-actors.png" />
     <Content Include="Images\hunger-games.png" />
+    <Content Include="Images\hungergamesQuote.png" />
     <Content Include="Images\katniss.jpg" />
     <Content Include="Images\mockingjay pin.png" />
+    <Content Include="Images\mockingjay1 %281%29.jpg" />
+    <Content Include="Images\mockingjay1 %281%29.png" />
     <Content Include="Images\Rat_and_me-330.jpg" />
+    <Content Include="Images\suzanne and jennifer.jpg" />
     <Content Include="Images\suzanne.jpg" />
     <Content Include="homePage.html" />
+    <Content Include="Images\suzanne1.jpg" />
+    <Content Include="Images\the-hunger-games-complete-trilogy.jpg" />
     <Content Include="suzanneCollins.css" />
     <Content Include="Web.config" />
   </ItemGroup>
