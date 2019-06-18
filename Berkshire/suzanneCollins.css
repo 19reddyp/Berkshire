@@ -54,6 +54,10 @@
         color: #114592;
     }
 
+.topnav {
+    overflow: hidden;
+    background-color: #4D7EC6;
+}
 .tableImages{
     width: 95%;
     height: auto;
