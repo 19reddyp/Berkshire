@@ -19,7 +19,7 @@
 .minorHeading {
     color: #A5B6BF;
     font-family:Montserrat-Regular;
-    font-size: large;
+    font-size: x-large;
 }
 
 .tableLabel {
@@ -31,7 +31,21 @@
 .bodyText {
     color: black;
     font-family: Montserrat-Regular;
-    font-size:small;
+    font-size:medium;
+}
+
+.bodyTextBold {
+    color: black;
+    font-family: Montserrat-Regular;
+    font-size: medium;
+    font-weight:bold;
+}
+
+.navbarHeading {
+    color: white;
+    font-family: Montserrat-Regular;
+    text-align: center;
+    font-size: xx-large;
 }
 
 .buttonFormatting {
@@ -62,4 +76,37 @@
     color: black;
     font-family: Montserrat-Regular;
     font-size: large;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #4D7EC6;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover .dropdown a:hover .dropbtn{
+            background-color: white;
+            color: #4D7EC6;
+        }
+
+        .topnav a.active {
+            background-color: white;
+            color: #4D7EC6;
+        }
+
+.topnav-right {
+    float: right;
+}
+
+.topnav-center {
+    align-content:center;
 }

@@ -70,6 +70,11 @@
 
     <Content Include="hungerGames.html" />
 
+    <Content Include="Images\hunger-games.png" />
+    <Content Include="Images\katniss.jpg" />
+    <Content Include="Images\mockingjay pin.png" />
+    <Content Include="Images\Rat_and_me-330.jpg" />
+    <Content Include="Images\suzanne.jpg" />
     <Content Include="homePage.html" />
     <Content Include="suzanneCollins.css" />
 
