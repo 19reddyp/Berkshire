@@ -51,3 +51,30 @@
         color: #114592;
     }
 
+.navUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #114592;
+}
+
+.navLi {
+    float: left;
+}
+
+    .navLi a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .navLi a:hover:not(.active) {
+            background-color: white;
+        }
+
+.active {
+    background-color: #4D7EC6;
+}
