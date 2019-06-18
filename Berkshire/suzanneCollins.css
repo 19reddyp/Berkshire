@@ -30,3 +30,24 @@
     color: black;
     font-family: Montserrat-Regular;
 }
+
+.buttonFormatting {
+    background-color: #114592;
+    border: 2px solid #114592;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+    .buttonFormatting:hover {
+        background-color: white;
+        color: #114592;
+    }
+
