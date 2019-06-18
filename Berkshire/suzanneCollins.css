@@ -1,11 +1,11 @@
 ﻿@font-face {
-	font-family: Montserrat-Bold;
-	src: url('../../../montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-family: Montserrat-Bold;
+    src: url('../../../montserrat/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: Montserrat-Regular;
-	src: url('../../../montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-family: Montserrat-Regular;
+    src: url('../../../montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 
@@ -68,6 +68,10 @@
         color: #114592;
     }
 
+.topnav {
+    overflow: hidden;
+    background-color: #4D7EC6;
+}
 
 .topnav {
     overflow: hidden;
