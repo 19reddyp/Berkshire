@@ -67,9 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="carouselPictures\hunger-games.png" />
-    <Content Include="carouselPictures\katniss.jpg" />
-    <Content Include="carouselPictures\suzanne.jpg" />
+    <Content Include="Images\hunger-games.png" />
+    <Content Include="Images\katniss.jpg" />
+    <Content Include="Images\mockingjay pin.png" />
+    <Content Include="Images\Rat_and_me-330.jpg" />
+    <Content Include="Images\suzanne.jpg" />
     <Content Include="homePage.html" />
     <Content Include="suzanneCollins.css" />
     <Content Include="Web.config" />
